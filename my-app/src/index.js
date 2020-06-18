@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './header/Header.js';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <React.StrictMode>
-    	<Header />
-    </React.StrictMode>,
+    <App />
+  </React.StrictMode>,
     document.getElementById('root')
 );
 
