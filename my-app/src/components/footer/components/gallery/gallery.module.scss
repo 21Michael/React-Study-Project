@@ -1,0 +1,60 @@
+/*-------------------------------section-gallery-scroll-------------------------------*/
+
+
+.footer__section-gallery-scroll {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-scroll__button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background-color: rgba(1, 1, 1, 0.2);
+}
+
+.gallery-scroll__button:hover {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+.gallery-scroll__button--left::before,
+.gallery-scroll__button--left::after,
+.gallery-scroll__button--right::after,
+.gallery-scroll__button--right::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 2px;
+    background-color: white;
+}
+
+.gallery-scroll__button--left::before,
+.gallery-scroll__button--right::before {
+    left: 20%;
+    top: 43%;
+}
+
+.gallery-scroll__button--left::before,
+.gallery-scroll__button--right::after {
+    transform: rotate(-46deg);
+}
+
+.gallery-scroll__button--left::after,
+.gallery-scroll__button--right::after {
+    top: 56%;
+    left: 20%;
+}
+
+.gallery-scroll__button--left::after,
+.gallery-scroll__button--right::before {
+    transform: rotate(46deg);
+}
+
+.gallery-scroll__button--left {
+    left: 0;
+}
+
+.gallery-scroll__button--right {
+    right: 0;
+}

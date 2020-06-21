@@ -1,0 +1,13 @@
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+@media all and (max-width:1023px) {
+    .nav__list {
+        border-top: 1px solid lightgray;
+        margin-top: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.header__basket {
+    position: relative;
+    padding-left: 28px;
+    margin-right: 34px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &::before {
+        content: url('./img/Ellipse 3.png');
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        transform: scale(1.2);
+    }
+}
+
+@media all and (max-width:1023px) {
+
+    .header__basket {
+        margin-right: 0;
+
+        &::before {
+            transform: scale(1.5);
+        }
+    }
+}

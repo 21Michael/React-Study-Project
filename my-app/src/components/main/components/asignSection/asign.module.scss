@@ -1,0 +1,110 @@
+
+/*-------------------------------section-asign-box-------------------------------*/
+
+    .main__section-asign-box {
+        text-align: center;
+    }
+
+    .asign-box__wrapper {
+        display: inline-block;
+        padding-top: 69px;
+        padding-bottom: 75px;
+    }
+
+    .asign-box__title {
+        font-weight: bold;
+        font-size: 2.6em;
+        text-transform: uppercase;
+    }
+
+    .asign-box__description {
+        font-family: Georgia;
+        font-style: italic;
+        letter-spacing: 0.015em;
+        word-spacing: 0.01em;
+        line-height: 1.3em;
+        font-size: 1.4em;
+        color: grey;
+    }
+
+    .asign-box__form-eamil {
+        margin-top: 54px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .asign-box__input-eamil {
+        padding: 18px 10px;
+        width: 53%;
+        border: 1px solid grey;
+        border-right: 0;
+    }
+
+    .asign-box__input-eamil::placeholder {
+        font-style: italic;
+        color: #000;
+        opacity: 1;
+    }
+
+    .asign-box__input-eamil:-ms-input-placeholder {
+        color: #000;
+        opacity: 1;
+    }
+
+    .asign-box__input-eamil::-ms-input-placeholder {
+        color: #000;
+        opacity: 1;
+    }
+
+    .asign-box__button-eamil {
+        padding: 18px 35px;
+        background-color: #f68236;
+        color: white;
+    }
+
+    .asign-box__button-eamil:hover {
+        filter: saturate(130%);
+    }
+
+@media all and (max-width:1023px) {
+    .asign-box__wrapper {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+    .asign-box__form-eamil {
+        margin-top: 49px;
+    }
+
+    .asign-box__input-eamil {
+        width: 65%;
+    }
+}
+
+@media all and (max-width:767px) {
+    .asign-box__wrapper {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .asign-box__title {
+        line-height: 1.1em;
+        font-size: 1.9em;
+    }
+
+    .asign-box__description {
+
+        margin-top: 7px;
+        line-height: 1.2em;
+        font-size: 1.3em;
+    }
+
+    .asign-box__form-eamil {
+        margin-top: 52px;
+    }
+
+    .asign-box__input-eamil {
+        width: 67%;
+    }
+
+}
