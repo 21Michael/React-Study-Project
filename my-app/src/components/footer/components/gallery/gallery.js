@@ -5,7 +5,7 @@ import List from './list/list.js'
 const Gallery = props => {
     const galleryRef = useRef(null);
 
-    return <section className={classes['footer__section-gallery-scroll']} ref={galleryRef} >
+    return <section className={classes['gallery-scroll']} ref={galleryRef} >
             <List />
              <button className={classes['gallery-scroll__button'] +' '+classes['gallery-scroll__button--left']} 
                  onClick={()=> props.handlerGalleryButtons(galleryRef.current, 'left') } ></button>

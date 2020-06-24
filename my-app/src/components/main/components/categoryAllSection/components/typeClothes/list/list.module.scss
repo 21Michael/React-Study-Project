@@ -1,0 +1,28 @@
+.type-list {
+    margin-top: 62px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media all and (max-width:1023px) {
+
+    .type-list {
+        padding: 0 115px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .type-list {
+        margin-top: 20px;
+        padding: 0;
+    }
+}

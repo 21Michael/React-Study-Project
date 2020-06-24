@@ -1,10 +1,15 @@
-.nav__item {
-    padding: 0 27px;
 
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+.nav__item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 27px;
+}
+
+.nav__item a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 @media all and (max-width:1023px) {

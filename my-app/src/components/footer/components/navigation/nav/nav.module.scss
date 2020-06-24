@@ -1,16 +1,15 @@
-
-.footer-navigation__nav {
+.navigation__nav {
     width: 290px;
     border-right: 1px solid lightgrey;
     padding-left: 15px;
 }
 
-.footer-navigation__list--first,
-.footer-navigation__title--first {
+.navigation__list--first,
+.navigation__title--first {
     margin-left: -15px;
 }
 
-.footer-navigation__title {
+.navigation__title {
     letter-spacing: 0.03em;
     line-height: 1.6em;
     font-size: 1.1em;
@@ -21,7 +20,7 @@
 
 @media all and (max-width:1023px) {
 
-    .footer-navigation__title {
+    .navigation__title {
         letter-spacing: 0.15em;
         font-size: 2.1em;
     }
@@ -29,7 +28,7 @@
    }
 
 @media all and (max-width:767px) {
-    .footer-navigation__title {
+    .navigation__title {
         line-height: 1.2em;
     }
 

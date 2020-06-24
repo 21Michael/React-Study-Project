@@ -1,12 +1,11 @@
-.tools-box {
+.header__form {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
 
-    &__form-search {
-        display: flex;
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    &__input-search {
+.form {
+    &__input {
         padding: 10px;
         padding-left: 12px;
         width: 124px;
@@ -14,20 +13,19 @@
         border-right: 0;
     }
 
-    &__input-search::placeholder {
+    &__input::placeholder {
         font-size: 12px;
         font-style: italic;
         color: #000;
         opacity: 1;
     }
 
-    &__button-search {
+    &__button {
         border: 1px solid #000;
         padding: 9px 10px;
 
         &:hover {
-            background-color: #606060;
-            border-color: #808080;
+            background-color: black;
             fill: #fff;
         }
     }
@@ -39,7 +37,6 @@
 
 .clicked,
 .clicked>svg {
-    background-color: #606060;
-    border-color: #808080;
+    background-color: black;
     fill: #fff;
 }

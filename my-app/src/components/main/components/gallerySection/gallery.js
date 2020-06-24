@@ -4,7 +4,7 @@ import List from './list/list.js'
 
 
 const Gallery = () => (
-    <section className={classes['main__section-gallery-square']}  >
+    <section className={classes['section-gallery']}  >
        <List/>
     </section>
 )

@@ -1,0 +1,29 @@
+.page-mark {
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    z-index: 2;
+}
+
+.page-mark__path {
+    text-transform: uppercase;
+    word-spacing: 0.4em;
+    font-size: 0.8em;
+}
+
+@media all and (max-width:1023px) {
+    .section-clothes__page-mark {
+        text-align: center;
+        top: 35px;
+    }
+
+    .page-mark__path {
+        font-size: 1.1em;
+    }
+}
+
+@media all and (max-width:767px) {
+    .section-clothes__page-mark {
+        top: 25px;
+    }
+}

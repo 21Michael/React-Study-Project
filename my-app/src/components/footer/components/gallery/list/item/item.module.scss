@@ -1,11 +1,16 @@
  .gallery-scroll__item {
      border-right: 1px solid grey;
+     background-color: black;
  }
 
  .gallery-scroll__item a {
-     display: inline-block;
+     display: block;
      width: 200px;
      height: 120px;
+ }
+
+ .gallery-scroll__item a:hover>img {
+     opacity: 0.9;
  }
 
  .gallery-scroll__item img {

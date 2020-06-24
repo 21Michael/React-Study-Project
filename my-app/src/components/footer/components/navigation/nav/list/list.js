@@ -4,7 +4,7 @@ import Item from './item/item.js'
 
 
 const List = props => (
-      <ul className={classes['footer-navigation__list']} >
+      <ul className={classes['navigation__list']} >
           {props.list.map((el, key)=> <Item item={el} key={key}/>)}   
       </ul>       
 )

@@ -6,8 +6,8 @@
     flex-wrap: wrap;
     padding-top: 28px;
     padding-bottom: 37px;
-    align-items: center;
-    border-bottom: 1px solid lightgray;
+    align-items: stretch;
+    border-bottom: 1px solid lightgray;vertical-align: middle; 
 }
 
 @media all and (max-width: 1023px) {
@@ -22,15 +22,4 @@
     }
 }
 
-/*-------------------------------title-------------------------------*/
 
-.navigation-box__title {
-    background-color: #000;
-    color: #fff;
-    padding: 8px 10px;
-    margin-right: 31px;
-
-    &:hover {
-        cursor: pointer;
-    }
-}

@@ -7,7 +7,7 @@ import {GalleryContext} from '../../../main.js'
 const List = props => (
 	<GalleryContext.Consumer>
 	{(context)=>
-	     <ul className={classes['gallery-square__list']}>
+	     <ul className={classes['gallery__list']}>
 	          {context.map((el, key)=> <Item el={el} key={key}/>)}
 	    </ul>
 	 }

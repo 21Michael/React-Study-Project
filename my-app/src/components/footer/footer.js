@@ -30,29 +30,29 @@ class Footer extends Component {
             navList: [{
                     title: 'COLLECTION',
                     list: [
-                        'Woman',
-                        'Man',
-                        'Kids',
-                        'Coming Soon'
+                        { to: '/woman', label: 'Woman' },
+                        { to: '/men', label: 'Men' },
+                        { to: '/kids', label: 'Kids' },
+                        { to: '/comingSoon', label: 'Coming Soon' }
                     ]
                 },
                 {
                     title: 'SITE',
                     list: [
-                        'Terms of Service',
-                        'Privacy Policy',
-                        'Copyright Policy',
-                        'Press Kit',
-                        'Support'
+                        { to: '/', label:  'Terms of Service' },
+                        { to: '/', label: 'Privacy Policy' },
+                        { to: '/', label: 'Copyright Policy' },
+                        { to: '/', label: 'Press Kit' },
+                        { to: '/', label: 'Support'}
                     ]
                 },
                 {
                     title: 'SHOP',
                     list: [
-                        'About us',
-                        'Shipping Metods',
-                        'Career',
-                        'Contact'
+                        { to: '/', label: 'About us' },
+                        { to: '/', label: 'Shipping Metods' },
+                        { to: '/', label: 'Career' },
+                        { to: '/', label: 'Contact' }
                     ]
                 }
             ],
@@ -70,7 +70,8 @@ class Footer extends Component {
     }
 
     handlerGalleryButtons = (listWrapper, direction) => {
-        let list_width = this.state.gallery.images.length * 200;
+        //console.log(listWrapper.offsetWidth)
+        const list_width = this.state.gallery.images.length * 200;
         const listWrapper_width = listWrapper.offsetWidth;
 
         let transform = this.state.gallery.transform;

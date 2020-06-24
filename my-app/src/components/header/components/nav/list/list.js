@@ -2,15 +2,19 @@ import React from 'react';
 import classes from './list.module.scss'
 import Item from './item/item.js'
 import {NavContext} from '../../../header.js'
+import { connect } from 'react-redux'
 
-const List = (props) => (
-	<NavContext.Consumer>
-	{(context)=>
-	    <ul className={classes['nav__list']}>
-	    	{context.map((el, i)=> <Item el={el} key={i}/>)}
-		</ul>
-	}
-	</NavContext.Consumer>
+
+const List = (props) => (	
+    <ul className={classes['nav__list']}>
+    	{props.nav.map((el, i)=> <Item navItem={el} key={i}/>)}
+	</ul>
 )
 
-export default List;
+function mapStateToProps(state) {
+    return {
+        nav: state.header.nav
+    }
+}
+
+export default connect(mapStateToProps)(List);

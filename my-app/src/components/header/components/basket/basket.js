@@ -1,10 +1,20 @@
 import React from 'react';
 import classes from './basket.module.scss'
+import {NavLink} from 'react-router-dom'
+import { connect } from 'react-redux'
 
-const Basket = (props) => (
-    <div className = { classes['header__basket'] } >
-    	<a href="">Basket ({props.basket.counter})</a> 
+const Basket = (props) => {
+	console.log(props)
+   return <div className = { classes['header__basket'] } >
+    	<NavLink exact to={props.basket.to}>Basket ({props.basket.counter})</NavLink> 
     </div>
-)
+}
 
-export default Basket;
+function mapStateToProps(state) {
+    return {
+        basket: state.header.basket
+    }
+}
+
+
+export default connect(mapStateToProps)(Basket);

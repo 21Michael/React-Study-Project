@@ -5,7 +5,7 @@ import NavTitle from './navTitle/navTitle.js'
 
 
 const Navigation = props => (
-    <section className={classes['footer__section-footer-navigation']} >
+    <section className={classes['navigation']} >
         {props.navList.map((nav, key)=> <Nav nav ={nav} key={key}/>)}
         <NavTitle/>
     </section>
