@@ -1,33 +1,31 @@
 .header__basket {
+    margin-right: 34px;
+}
+
+.header__basket a {
     position: relative;
     padding-left: 28px;
-    margin-right: 34px;
-
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     &::before {
         content: url('./img/Ellipse 3.png');
         position: absolute;
         top: 70%;
         left: 6px;
-        transform: translate(0, -70%) scale(1.2); 
+        transform: translate(0, -70%) scale(1.2);
+    }
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
     }
 }
-.header__basket a{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+
 @media all and (max-width:1023px) {
 
     .header__basket {
         margin-right: 0;
-
-        &::before {
-            transform: scale(1.5);
-        }
     }
 }

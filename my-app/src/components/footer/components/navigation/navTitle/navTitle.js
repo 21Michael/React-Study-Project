@@ -1,13 +1,12 @@
 import React from 'react';
 import classes from './navTitle.module.scss'
 import { NavigationTitleContext } from '../../../footer.js'
+import { connect } from 'react-redux'
 
-const Navigation = () => (
-    <NavigationTitleContext.Consumer>
-      {(context) => 
+const Navigation = (props) => (
         <nav className={classes['navigation__nav'] +' '+ classes['navigation__nav--social']}>
-            <h4 className={classes['navigation__title']} >{context.title}</h4>
-            <p className={classes['navigation__copyright']} >{context.copyright}</p>
+            <h4 className={classes['navigation__title']} >{props.title}</h4>
+            <p className={classes['navigation__copyright']} >{props.copyright}</p>
             <div className={classes['navigation__icons-wrapper']} >
                 <a className={classes['navigation__icon']}   href="https://twitter.com/home?lang=ru"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-15 0 105 75">
@@ -39,9 +38,13 @@ const Navigation = () => (
                 </a>
             </div>
         </nav>
-        }
-    </NavigationTitleContext.Consumer>
-
 )
 
-export default Navigation;
+function mapStateToProps(state) {
+    return {
+        title: state.footer.navigation.navTitle.title,
+        copyright: state.footer.navigation.navTitle.copyright
+    }
+}
+
+export default connect(mapStateToProps)(Navigation);
