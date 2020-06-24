@@ -1,17 +1,18 @@
 import React from 'react';
 import classes from './list.module.scss'
 import Item from './item/item.js'
-import {GalleryContext} from '../../../main.js'
-
+import { connect } from 'react-redux'
 
 const List = props => (
-	<GalleryContext.Consumer>
-	{(context)=>
-	     <ul className={classes['gallery__list']}>
-	          {context.map((el, key)=> <Item el={el} key={key}/>)}
-	    </ul>
-	 }
-    </GalleryContext.Consumer>
+    <ul className={classes['gallery__list']}>
+        {props.gallery.map((el, key)=> <Item el={el} key={key}/>)}
+    </ul>
 )
 
-export default List;
+function mapStateToProps(state) {
+    return {
+        gallery: state.main.homePage.content.gallery
+    }
+}
+
+export default connect(mapStateToProps)(List);

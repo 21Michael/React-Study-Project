@@ -4,7 +4,6 @@ import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
 const Basket = (props) => {
-	console.log(props)
    return <div className = { classes['header__basket'] } >
     	<NavLink exact to={props.basket.to}>Basket ({props.basket.counter})</NavLink> 
     </div>
@@ -15,6 +14,5 @@ function mapStateToProps(state) {
         basket: state.header.basket
     }
 }
-
 
 export default connect(mapStateToProps)(Basket);
