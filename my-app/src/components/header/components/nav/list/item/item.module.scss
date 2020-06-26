@@ -1,5 +1,5 @@
 
-.nav__item a {
+.item a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,13 +7,13 @@
     padding: 0 27px;
 }
 
-.nav__item a:hover {
+.item a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 @media all and (max-width:1023px) {
-    .nav__item {
+    .item {
         font-size: 1.1em;
         padding: 12px 27px;
     }

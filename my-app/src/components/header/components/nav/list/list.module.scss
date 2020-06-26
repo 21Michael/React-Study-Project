@@ -1,10 +1,10 @@
-.nav__list {
+.list {
 	height: 100%;
     display: flex;
 }
 
 @media all and (max-width:1023px) {
-    .nav__list {
+    .list {
         border-top: 1px solid lightgray;
         margin-top: 20px;
         display: flex;

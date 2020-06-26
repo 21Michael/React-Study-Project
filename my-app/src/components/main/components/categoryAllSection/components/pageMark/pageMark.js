@@ -3,7 +3,7 @@ import classes from './pageMark.module.scss'
 
 const PageMark = (props) => {
    return <div className={classes["page-mark"]}>
-	    <span className={classes["page-mark__path"]}>HOME{props.path.replace('/', ' / ')}</span>
+	    <span className={classes["path"]}>HOME{props.path.replace(/\//g, ' / ')}</span>
 	</div>
 }
 

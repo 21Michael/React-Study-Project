@@ -4,14 +4,14 @@ import Item from './item/item.js'
 import { connect } from 'react-redux'
 
 const List = props => (
-    <ul className={classes['gallery__list']}>
+    <ul className={classes['list']}>
         {props.gallery.map((el, key)=> <Item el={el} key={key}/>)}
     </ul>
 )
 
 function mapStateToProps(state) {
     return {
-        gallery: state.main.homePage.content.gallery
+        gallery: state.main.home.content.gallery
     }
 }
 

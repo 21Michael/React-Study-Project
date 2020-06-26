@@ -1,0 +1,14 @@
+.section-product-details {
+    position: relative;
+    padding-bottom: 90px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+@media all and (max-width:1023px) {
+    .section-product-details {
+        padding-bottom: 110px;
+        margin-bottom: 45px;
+    }
+}

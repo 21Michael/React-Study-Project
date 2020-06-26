@@ -7,3 +7,4 @@ export function onChangeInput(value) {
 	console.log("headerAction: " + value)
     return { type: CHANGE_INPUT, value: value }
 }
+

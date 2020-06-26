@@ -1,0 +1,24 @@
+.item {
+    margin-top: 10px;
+}
+
+.link {
+    display: block;
+    max-width: 98px;
+    box-shadow: 0px 2px 4px grey;
+}
+.link:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 8px grey;
+}
+
+.img {
+    width: 100%;
+}
+
+@media all and (max-width:767px) {
+    .link {
+        max-width: 78px;
+    }
+
+}

@@ -1,78 +1,75 @@
 /*-------------------------------section-title-box-------------------------------*/
 
-.section-title-box {
+.section-title {
     text-align: center;
 }
 
-.title-box {
-    &__wrapper {
-        display: inline-block;
-        padding-top: 114px;
-        padding-bottom: 133px;
-    }
+.wrapper {
+    display: inline-block;
+    padding-top: 114px;
+    padding-bottom: 133px;
+}
 
-    &__title {
-        letter-spacing: -0.036em;
-        font-size: 5em;
-        text-transform: uppercase;
-    }
+.title {
+    letter-spacing: -0.036em;
+    font-size: 5em;
+    text-transform: uppercase;
+}
 
-    &__description {
-        font-family: Georgia;
-        font-style: italic;
-        letter-spacing: 0.015em;
-        word-spacing: 0.01em;
-        font-size: 1.8em;
-        color: grey;
-    }
+.description {
+    font-family: Georgia;
+    font-style: italic;
+    letter-spacing: 0.015em;
+    word-spacing: 0.01em;
+    font-size: 1.8em;
+    color: grey;
+}
 
-    &__button {
-        display: inline-block;
-        margin-top: 59px;
-        padding: 15px 30px;
-        border: 1px solid grey;
-        letter-spacing: 0.029em;
-    }
+.button {
+    display: inline-block;
+    margin-top: 59px;
+    padding: 15px 30px;
+    border: 1px solid grey;
+    letter-spacing: 0.029em;
+}
 
-    &__button:hover {
-        cursor: pointer;
-        background-color: black;
-        color: white;
-    }
-
+.button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 @media all and (max-width:1023px) {
-    .title-box {
-        &__wrapper {
-            padding-top: 42px;
-            padding-bottom: 50px;
-        }
 
-        &__title {
-            line-height: 1.1em;
-        }
-
-        &__description {
-            margin-top: 28px;
-            line-height: 1.2em;
-        }
-
-        &__button {
-            display: none;
-        }
+    .wrapper {
+        padding-top: 42px;
+        padding-bottom: 50px;
     }
+
+    .title {
+        line-height: 1.1em;
+    }
+
+    .description {
+        margin-top: 28px;
+        line-height: 1.2em;
+    }
+
+    .button {
+        display: none;
+    }
+
 }
 
 @media all and (max-width:767px) {
-    .title-box {
-        &__wrapper {
-            padding-top: 38px;
-            padding-bottom: 50px;
-        }
 
-        &__title {
-            line-height: 1.06em;
-        }
+    .wrapper {
+        padding-top: 38px;
+        padding-bottom: 50px;
     }
+
+    .title {
+        line-height: 1.06em;
+    }
+
 }

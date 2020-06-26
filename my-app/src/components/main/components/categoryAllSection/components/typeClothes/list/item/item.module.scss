@@ -9,42 +9,42 @@
     box-shadow: 0px 2px 10px grey;
 }
 
-.item__img {
+.img {
     display: block;
     width: 210px;
 }
 
-.item__img img {
+.img img {
     width: 100%;
 }
 
-.item__info {
+.info {
     border-top: 1px solid #bab3b2;
     padding: 16px 0;
     font-size: 1.1em;
 }
 
-.item__info p {
+.info p {
     font-weight: bolder;
     line-height: 1.5em;
 }
 
-.item__info span {
+.info span {
     font-style: italic;
 }
 
 @media all and (max-width:1023px) {
-    .item__img {
+    .img {
         width: 220px;
     }
 }
 
 @media all and (max-width:767px) {
-    .item__info {
+    .info {
         font-size: 1em;
     }
 
-    .item__img {
+    .img {
         width: 160px;
     }
 }

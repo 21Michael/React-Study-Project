@@ -1,0 +1,78 @@
+/*--------------------------inform--------------------------*/
+
+.inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.article-num {
+    line-height: 2em;
+    color: grey;
+}
+
+.price {
+    padding-top: 23px;
+    font-weight: bolder;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.price sub {}
+
+.description {
+    padding-top: 22px;
+    width: 60%;
+    color: grey;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+@media all and (max-width:1023px) {
+    .inform {
+        padding-top: 20px;
+    }
+
+    .price {
+        padding-top: 35px;
+        font-size: 2em;
+    }
+
+    .description {
+        padding-top: 35px;
+        width: 100%;
+        font-size: 1.3em;
+        line-height: 1.7em;
+    }
+}
+
+@media all and (max-width:767px) {
+    .inform {
+        padding-top: 25px;
+        font-size: 0.7em;
+    }
+
+    .article-num {
+        padding-top: 5px;
+        font-size: 1.3em;
+    }
+
+    .price {
+        padding-top: 35px;
+        font-size: 2.7em;
+    }
+
+    .description {
+        padding-top: 35px;
+        width: 90%;
+        font-size: 1.7em;
+        line-height: 1.8em;
+    }
+}

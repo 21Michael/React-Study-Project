@@ -11,7 +11,7 @@ class Header extends Component {
         return (
             <ErrorBoundary>
             <header className={classes.header}>
-                <div className={classes.header__wrapper}>
+                <div className={classes.wrapper}>
                     <Title/>
                     <Nav/>
                     <Form/>

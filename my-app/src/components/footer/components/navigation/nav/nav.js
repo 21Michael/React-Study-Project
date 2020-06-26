@@ -4,8 +4,8 @@ import List from './list/list.js'
 
 
 const Navigation = props => (
-    <div className={classes['navigation__nav']} >
-        <h4 className={classes['navigation__title']}>{props.nav.title}</h4>
+    <div className={classes['nav']} >
+        <h4 className={classes['title']}>{props.nav.title}</h4>
         <List list={props.nav.list}/>
     </div>
 )

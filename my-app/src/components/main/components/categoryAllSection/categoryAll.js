@@ -2,17 +2,33 @@ import React from 'react';
 import classes from './categoryAll.module.scss'
 import TypeClothes from './components/typeClothes/typeClothes.js'
 import PageMark from './components/pageMark/pageMark.js'
+import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom';
 
-const CategoryAll = (props) => (
-    <section className={classes["section-clothes"]}>
-	    <PageMark path={props.path}/>
-	    <div className={classes["clothes__type-wrapper"]}>
-	        {props.images.map((el, i)=> <TypeClothes key={i} clothType={el}/>)}
-	    </div>
-	    <div className={classes["clothes__lookbook-link"]}>
-	    	<a>Check our lookbook</a>
-	    </div>
-	</section>
-)
+const CategoryAll = (props) => {
+    let images;
+    for (let key in props.sections) {
+        if (props.sections[key].path === props.location.pathname) {
+            images = props.sections[key].images
+        }
+    }
+    return <section className={classes["section-clothes"]}>
+			    <PageMark path={props.location.pathname}/>
+			    <div className={classes["type-wrapper"]}>
+			        {images.map((el, i)=> <TypeClothes key={i} clothType={el}/>)}
+			    </div>
+			    <div className={classes["lookbook-link"]}>
+			    	<NavLink exact to={props.lookbook.to}>Check our lookbook</NavLink>
+			    </div>
+			</section>
+}
 
-export default CategoryAll;
+function mapStateToProps(state) {
+    return {
+        sections: state.main.categoryAll.sections,
+        lookbook: state.main.categoryAll.lookbook
+    }
+}
+
+export default withRouter(connect(mapStateToProps)(CategoryAll));

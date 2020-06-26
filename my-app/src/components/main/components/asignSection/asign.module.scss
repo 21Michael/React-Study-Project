@@ -1,92 +1,91 @@
 .asign {
     text-align: center;
-
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 69px 0 75px 0;
-    }
-
-    &__title {
-        font-weight: bold;
-        font-size: 2.6em;
-        text-transform: uppercase;
-    }
-
-    &__description {
-        font-family: Georgia;
-        font-style: italic;
-        letter-spacing: 0.015em;
-        word-spacing: 0.01em;
-        line-height: 1.3em;
-        font-size: 1.4em;
-        color: grey;
-    }
-
-    &__form-eamil {
-        margin-top: 54px;
-        width: 48.3%;
-        display: flex;
-    }
-     &__form-eamil:hover {
-        box-shadow: 0px 2px 5px grey;
-    }
-
-    &__input-eamil {
-        padding: 18px 10px;
-        flex-grow: 2;
-        border: 1px solid grey;
-        border-right: 0;
-    }
-
-    &__input-eamil::placeholder {
-        font-style: italic;
-        color: #000;
-        opacity: 1;
-    }
-
-    &__button-eamil {
-        padding: 18px 35px;
-        background-color: #f68236;
-        color: white;
-    }
 }
 
-@media all and (max-width:1023px) {
-    .asign {
-        &__wrapper {
-            padding-top: 65px;
-            padding-bottom: 75px;
-        }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 69px 0 75px 0;
+}
 
-        &__form-eamil {
-            margin-top: 49px;
-        }   
+.title {
+    font-weight: bold;
+    font-size: 2.6em;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family: Georgia;
+    font-style: italic;
+    letter-spacing: 0.015em;
+    word-spacing: 0.01em;
+    line-height: 1.3em;
+    font-size: 1.4em;
+    color: grey;
+}
+
+.form-eamil {
+    margin-top: 54px;
+    width: 48.3%;
+    display: flex;
+}
+
+.form-eamil:hover {
+    box-shadow: 0px 2px 5px grey;
+}
+
+.input-eamil {
+    padding: 18px 10px;
+    flex-grow: 2;
+    border: 1px solid grey;
+    border-right: 0;
+}
+
+.input-eamil::placeholder {
+    font-style: italic;
+    color: #000;
+    opacity: 1;
+}
+
+.button-eamil {
+    padding: 18px 35px;
+    background-color: #f68236;
+    color: white;
+}
+
+
+@media all and (max-width:1023px) {
+    .wrapper {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+    .form-eamil {
+        margin-top: 49px;
     }
 }
 
 @media all and (max-width:767px) {
-    .asign {
-        &__wrapper {
-            padding-top: 75px;
-            padding-bottom: 75px;
-        }
 
-        &__title {
-            line-height: 1.1em;
-            font-size: 1.9em;
-        }
+    .wrapper {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
 
-        &__description {
-            margin-top: 7px;
-            line-height: 1.2em;
-            font-size: 1.3em;
-        }
+    .title {
+        line-height: 1.1em;
+        font-size: 1.9em;
+    }
 
-        &__form-eamil {
-            margin-top: 52px;
-            width: 95%;
-        }
+    .description {
+        margin-top: 7px;
+        line-height: 1.2em;
+        font-size: 1.3em;
+    }
+
+    .form-eamil {
+        margin-top: 52px;
+        width: 95%;
     }
 }

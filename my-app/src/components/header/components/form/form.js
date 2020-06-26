@@ -5,12 +5,12 @@ import { openCloseForm, onChangeInput } from '..//../../../store/actions/header.
 
 const Form = (props) => {
     const buttonClasses = (!props.form.hidden) ?
-        classes['form__button'] + ' ' + classes['clicked'] :
-        classes['form__button'];
+        classes['button'] + ' ' + classes['clicked'] :
+        classes['button'];
     const inputClasses = (props.form.hidden) ? classes['hidden'] :
-        classes['form__input'];
+        classes['input'];
 
-    return <form className={classes['header__form']}>
+    return <form className={classes['form']}>
 				<input 
 					className={inputClasses} 
 					onKeyDown = {

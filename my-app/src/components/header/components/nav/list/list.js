@@ -1,12 +1,11 @@
 import React from 'react';
 import classes from './list.module.scss'
 import Item from './item/item.js'
-import {NavContext} from '../../../header.js'
 import { connect } from 'react-redux'
 
 
 const List = (props) => (	
-    <ul className={classes['nav__list']}>
+    <ul className={classes['list']}>
     	{props.nav.map((el, i)=> <Item navItem={el} key={i}/>)}
 	</ul>
 )

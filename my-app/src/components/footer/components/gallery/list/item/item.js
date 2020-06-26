@@ -3,7 +3,7 @@ import classes from './item.module.scss'
 import {NavLink} from 'react-router-dom'
 
 const Item = props => (
-    <li className={classes['gallery-scroll__item']}>
+    <li className={classes['item']}>
     	<NavLink exact to='/productDetails'>
     		<img src= {require(`${props.url}`)} alt="img"/>
     	</NavLink>

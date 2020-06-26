@@ -1,0 +1,13 @@
+.item a {
+    display: inline-block;
+    margin: 0 7px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.item a:hover,
+.clicked {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

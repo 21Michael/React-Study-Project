@@ -1,23 +1,21 @@
 .section-clothes {
-    padding-top: 30px;
     position: relative;
 }
 
-
 /*-------------------------------section-clothes-------------------------------*/
 
-.clothes__type {
+.type {
     padding-top: 62px 0 25px 0;
     border-bottom: 1px solid lightgray;
 }
 
 /*-------------------------------lookbook-link-------------------------------*/
-.clothes__lookbook-link {
+.lookbook-link {
     text-align: center;
     padding: 40px;
 }
 
-.clothes__lookbook-link a {
+.lookbook-link a {
     font-family: Georgia;
     font-style: italic;
     letter-spacing: 0.015em;
@@ -26,13 +24,13 @@
     color: #606060;
 }
 
-.clothes__lookbook-link a:hover {
+.lookbook-link a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 @media all and (max-width:1023px) {
-    .clothes__lookbook-link {
+    .lookbook-link {
         display: none;
     }
 }

@@ -5,12 +5,12 @@ import Title from './components/titleSection/title.js'
 import Gallery from './components/gallerySection/gallery.js'
 import Asign from './components/asignSection/asign.js'
 import CategoryAll from './components/categoryAllSection/categoryAll.js'
+import ProductDetails from './components/productDetailsSection/productDetails.js'
 import Error404 from './components/errorSection/error404.js'
 import { connect } from 'react-redux'
 import { Switch, Route } from 'react-router-dom'
 
 class Main extends Component {
-
     render() {
         return (
             <ErrorBoundary>
@@ -21,29 +21,11 @@ class Main extends Component {
                         <Gallery/>
                         <Asign/>
                    </Route>
-                   <Route path={this.props.womanPath}>
-                        <CategoryAll 
-                            images = {this.props.womanImages}
-                            path={this.props.womanPath}
-                        />
+                   <Route path={this.props.categoryAllPath}>
+                        <CategoryAll/>
                    </Route>
-                    <Route path={this.props.menPath}>
-                        <CategoryAll 
-                            images = {this.props.menImages}
-                            path={this.props.menPath}
-                        />
-                   </Route>
-                    <Route path={this.props.kidsPath}>
-                        <CategoryAll 
-                            images = {this.props.kidsImages}
-                            path={this.props.kidsPath}
-                        />
-                   </Route>
-                    <Route path={this.props.comingSoonPath}>
-                        <CategoryAll 
-                            images = {this.props.comingSoonImages}
-                            path={this.props.comingSoonPath}
-                        />
+                    <Route path={this.props.productDetailsPath}>
+                        <ProductDetails/>
                    </Route>
                    <Route> 
                         <Error404 />
@@ -57,14 +39,8 @@ class Main extends Component {
 
 function mapStateToProps(state) {
     return {
-        womanPath: state.main.categoryAllPage.sections.woman.path,
-        menPath: state.main.categoryAllPage.sections.men.path,
-        kidsPath: state.main.categoryAllPage.sections.kids.path,
-        comingSoonPath: state.main.categoryAllPage.sections.comingSoon.path,
-        womanImages: state.main.categoryAllPage.sections.woman.images,
-        menImages: state.main.categoryAllPage.sections.men.images,
-        kidsImages: state.main.categoryAllPage.sections.kids.images,
-        comingSoonImages: state.main.categoryAllPage.sections.comingSoon.images
+        categoryAllPath: state.main.categoryAll.path,
+        productDetailsPath: state.main.productDetails.path
     }
 }
 

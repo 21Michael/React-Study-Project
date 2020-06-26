@@ -5,6 +5,6 @@ import footerReducer from './footer.js'
 
 export default combineReducers({
     header: headerReducer,
-    main: mainReducer,
+    main: mainReducer(),
     footer: footerReducer
 })

@@ -1,11 +1,11 @@
 /*-------------------------------section-gallery-scroll-------------------------------*/
 
-.gallery-scroll {
+.gallery {
     position: relative;
     overflow: hidden;
 }
 
-.gallery-scroll__button {
+.button {
     position: absolute;
     top: 0;
     height: 100%;
@@ -13,14 +13,14 @@
     background-color: rgba(1, 1, 1, 0.2);
 }
 
-.gallery-scroll__button:hover {
+.button:hover {
     background-color: rgba(1, 1, 1, 0.5);
 }
 
-.gallery-scroll__button--left::before,
-.gallery-scroll__button--left::after,
-.gallery-scroll__button--right::after,
-.gallery-scroll__button--right::before {
+.button--left::before,
+.button--left::after,
+.button--right::after,
+.button--right::before {
     content: "";
     position: absolute;
     width: 23px;
@@ -28,32 +28,32 @@
     background-color: white;
 }
 
-.gallery-scroll__button--left::before,
-.gallery-scroll__button--right::before {
+.button--left::before,
+.button--right::before {
     left: 20%;
     top: 43%;
 }
 
-.gallery-scroll__button--left::before,
-.gallery-scroll__button--right::after {
+.button--left::before,
+.button--right::after {
     transform: rotate(-46deg);
 }
 
-.gallery-scroll__button--left::after,
-.gallery-scroll__button--right::after {
+.button--left::after,
+.button--right::after {
     top: 56%;
     left: 20%;
 }
 
-.gallery-scroll__button--left::after,
-.gallery-scroll__button--right::before {
+.button--left::after,
+.button--right::before {
     transform: rotate(46deg);
 }
 
-.gallery-scroll__button--left {
+.button--left {
     left: 0;
 }
 
-.gallery-scroll__button--right {
+.button--right {
     right: 0;
 }

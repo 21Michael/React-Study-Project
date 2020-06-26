@@ -1,14 +1,13 @@
 import React from 'react';
 import classes from './navTitle.module.scss'
-import { NavigationTitleContext } from '../../../footer.js'
 import { connect } from 'react-redux'
 
 const Navigation = (props) => (
-        <nav className={classes['navigation__nav'] +' '+ classes['navigation__nav--social']}>
-            <h4 className={classes['navigation__title']} >{props.title}</h4>
-            <p className={classes['navigation__copyright']} >{props.copyright}</p>
-            <div className={classes['navigation__icons-wrapper']} >
-                <a className={classes['navigation__icon']}   href="https://twitter.com/home?lang=ru"> 
+        <nav className={classes['nav'] +' '+ classes['nav--social']}>
+            <h4 className={classes['title']} >{props.title}</h4>
+            <p className={classes['copyright']} >{props.copyright}</p>
+            <div className={classes['icons-wrapper']} >
+                <a className={classes['icon']}   href="https://twitter.com/home?lang=ru"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-15 0 105 75">
                         <path d="M67.812 16.141a26.246 26.246 0 0 1-7.519 2.06 13.134 13.134 0 0 0 5.756-7.244 26.127
                         26.127 0 0 1-8.313 3.176A13.075 13.075 0 0 0 48.182 10c-7.229 0-13.092 5.861-13.092 13.093 0 1.026.118
@@ -19,13 +18,13 @@ const Navigation = (props) => (
                         0 0 0 6.533-6.774z"></path>
                     </svg>
                 </a>
-                <a className={classes['navigation__icon']}  href="https://uk-ua.facebook.com/">
+                <a className={classes['icon']}  href="https://uk-ua.facebook.com/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 -10 25 45">
                         <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192
                         1.583-5.192 4.615v3.385z"></path>
                     </svg>
                 </a>
-                <a className={classes['navigation__icon']}  href="https://www.instagram.com/?hl=ru"> 
+                <a className={classes['icon']}  href="https://www.instagram.com/?hl=ru"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 -13 24 50">
                         <path d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 
                         0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 

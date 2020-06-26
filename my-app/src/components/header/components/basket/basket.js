@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
 const Basket = (props) => {
-   return <div className = { classes['header__basket'] } >
+   return <div className = { classes['basket'] } >
     	<NavLink exact to={props.basket.to}>Basket ({props.basket.counter})</NavLink> 
     </div>
 }

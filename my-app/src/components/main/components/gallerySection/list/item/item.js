@@ -4,17 +4,17 @@ import {NavLink} from 'react-router-dom'
 
 
 const Item = props => (
-    <li className={classes['gallery__item']}>
+    <li className={classes['item']}>
         <NavLink exact 
             to='/productDetails' 
-            className={classes['item__img']} 
+            className={classes['img']} 
             style={{backgroundImage: `url(${require(`${props.el.url}`)})`}}> 
         	{props.el.title ?
-        		 <div className={classes['item__shadow']+' '+classes['item__label']} >
-                	<h4 className={classes['item__title']}>{props.el.title} </h4> 
-                	<span className={classes['item__description']}> {props.el.material} </span>
+        		 <div className={classes['shadow']+' '+classes['label']} >
+                	<h4 className={classes['title']}>{props.el.title} </h4> 
+                	<span className={classes['description']}> {props.el.material} </span>
             	 </div>
-            : <div className={classes['item__shadow']}></div>}
+            : <div className={classes['shadow']}></div>}
         </NavLink>
     </li>
 )

@@ -6,10 +6,10 @@ const initialState = {
         label: 'SH'
     },
     nav: [
-        { to: '/woman', label: 'Woman' },
-        { to: '/men', label: 'Men' },
-        { to: '/kids', label: 'Kids' },
-        { to: '/comingSoon', label: 'Coming Soon' }
+        { to: '/categoryAll/woman', label: 'Woman' },
+        { to: '/categoryAll/men', label: 'Men' },
+        { to: '/categoryAll/kids', label: 'Kids' },
+        { to: '/categoryAll/comingSoon', label: 'Coming Soon' }
     ],
     form: {
         hidden: true,

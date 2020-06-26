@@ -1,19 +1,19 @@
- .gallery-scroll__item {
+ .item {
      border-right: 1px solid grey;
      background-color: black;
  }
 
- .gallery-scroll__item a {
+ .item a {
      display: block;
      width: 200px;
      height: 120px;
  }
 
- .gallery-scroll__item a:hover>img {
+ .item a:hover>img {
      opacity: 0.9;
  }
 
- .gallery-scroll__item img {
+ .item img {
      height: 100%;
      width: 100%;
  }

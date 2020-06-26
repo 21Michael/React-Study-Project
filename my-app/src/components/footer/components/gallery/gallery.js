@@ -38,14 +38,14 @@ const Gallery = props => {
         }
     }
 
-    return <section className={classes['gallery-scroll']} ref={galleryRef} >
+    return <section className={classes['gallery']} ref={galleryRef} >
             	<List />
 	            <button 
-	            	className={classes['gallery-scroll__button'] +' '+classes['gallery-scroll__button--left']} 
+	            	className={classes['button'] +' '+classes['button--left']} 
 	                onClick={()=> handlerGalleryButtons(galleryRef.current, 'left') } >
 	            </button>
 	            <button  
-	            	className={classes['gallery-scroll__button'] +' '+classes['gallery-scroll__button--right']} 
+	            	className={classes['button'] +' '+classes['button--right']} 
 	                onClick={()=> handlerGalleryButtons(galleryRef.current, 'right') }>
 	            </button>
           	</section>

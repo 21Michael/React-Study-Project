@@ -1,9 +1,9 @@
-.clothes__type {
+.type {
     padding: 62px 0 45px 0;
     border-bottom: 1px solid lightgray;
 }
 
-.clothes__type-title {
+.type-title {
     text-align: center;
     font-size: 2.6em;
     font-weight: bold;
@@ -11,17 +11,17 @@
 }
 
 @media all and (max-width:1023px) {
-    .clothes__type {
+    .type {
         padding: 62px 0 60px 0;
     }
 }
 
 @media all and (max-width:767px) {
-    .clothes__type {
+    .type {
         padding: 40px 0 20px 0;
     }
 
-    .clothes__type-title {
+    .type-title {
         font-size: 1.8em;
     }
 }

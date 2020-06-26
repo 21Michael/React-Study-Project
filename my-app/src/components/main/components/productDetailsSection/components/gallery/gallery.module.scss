@@ -1,0 +1,19 @@
+.gallery {
+    width: 100%;
+    position: relative;
+    padding: 62px 0 45px 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1023px) {
+    .gallery {
+        padding: 62px 0 60px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery {
+        padding: 40px 0 20px 0;
+    }
+}

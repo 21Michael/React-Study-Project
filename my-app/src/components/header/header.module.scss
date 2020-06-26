@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------HEADER-----------------------------------------------------------------*/
-.header__wrapper {
+.wrapper {
     letter-spacing: -0.04em;
     font-size: 15px;
     display: flex;
@@ -7,17 +7,14 @@
     padding-top: 28px;
     padding-bottom: 37px;
     align-items: stretch;
-    border-bottom: 1px solid lightgray;vertical-align: middle; 
+    border-bottom: 1px solid lightgray;
+    vertical-align: middle;
 }
 
 @media all and (max-width: 1023px) {
-    .header {
-        &__wrapper {
-            font-size: 17px;
-            padding-top: 20px;
-            padding-bottom: 0;
-        }
+    .wrapper {
+        font-size: 17px;
+        padding-top: 20px;
+        padding-bottom: 0;
     }
 }
-
-
