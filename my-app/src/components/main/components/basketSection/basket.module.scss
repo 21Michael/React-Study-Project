@@ -1,0 +1,25 @@
+input {
+    border: 0;
+    width: 30px;
+    opacity: 1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.section-basket {
+    border-bottom: 1px solid lightgray;
+}
+
+@media all and (max-width:1024px) {
+    .section-basket {
+        padding-bottom: 45px;
+    }
+}
+
+
+.main[data-page='ShoppingBagPage']+.footer .footer__section-gallery-scroll {
+    display: none;
+}

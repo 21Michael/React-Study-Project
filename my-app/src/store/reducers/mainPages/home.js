@@ -2,18 +2,19 @@ const initialState = {
     hidden: false,
     content: {
         title: {
+            to: '/categoryAll/comingSoon',
             title: 'Hazy Shade of spring',
             description: 'Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.'
         },
         gallery: [
-            { url: './img/2.jpg' },
-            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: './img/1.jpg' },
-            { url: './img/4.jpg' },
-            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: './img/3.jpg' },
-            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: './img/5.jpg' },
-            { url: './img/6.jpg' },
-            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: './img/7.jpg' },
-            { url: './img/8.jpg' }
+            { url: '/images/homePage/2.jpg' },
+            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: '/images/homePage/1.jpg' },
+            { url: '/images/homePage/4.jpg' },
+            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: '/images/homePage/3.jpg' },
+            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: '/images/homePage/5.jpg' },
+            { url: '/images/homePage/6.jpg' },
+            { title: 'ELEGANT SHOES', material: 'BRAIDED LEATHER', url: '/images/homePage/7.jpg' },
+            { url: '/images/homePage/8.jpg' }
         ],
         asign: {
             title: 'sign up to receive our updates',

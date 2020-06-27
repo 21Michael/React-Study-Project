@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 const MainImg = props => (
     <div className={classes["wrapper"]}> 
-    	<img className={classes["img"]} src={require(`../img/${props.mainImg}`)} alt="img"/>  	
+    	<img className={classes["img"]} src={props.mainImg} alt="img"/>  	
    	</div>
 )
 

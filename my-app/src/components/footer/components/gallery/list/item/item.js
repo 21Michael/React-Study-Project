@@ -4,8 +4,8 @@ import {NavLink} from 'react-router-dom'
 
 const Item = props => (
     <li className={classes['item']}>
-    	<NavLink exact to='/productDetails'>
-    		<img src= {require(`${props.url}`)} alt="img"/>
+    	<NavLink exact to={props.to}>
+    		<img src={props.img} alt="img"/>
     	</NavLink>
     </li>
 )

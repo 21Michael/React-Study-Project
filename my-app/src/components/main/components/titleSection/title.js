@@ -8,7 +8,7 @@ const Title = props => (
         <div className={classes['wrapper']} >
             <h1 className={classes['title']}>{props.title}</h1>
             <p className={classes['description']} >{props.description}</p>
-            <NavLink exact className={classes['button']} to='/comingSoon'>CHECK NEW ARRIVALS</NavLink>
+            <NavLink exact className={classes['button']} to={props.to}>CHECK NEW ARRIVALS</NavLink>
         </div>
     </section>
 )
@@ -16,7 +16,8 @@ const Title = props => (
 function mapStateToProps(state) {
     return {
         title: state.main.home.content.title.title,
-        description: state.main.home.content.title.description
+        description: state.main.home.content.title.description,
+        to: state.main.home.content.title.to
     }
 }
 

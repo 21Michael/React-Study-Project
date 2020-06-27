@@ -8,7 +8,7 @@ const Item = props => (
         <NavLink exact 
             to='/productDetails' 
             className={classes['img']} 
-            style={{backgroundImage: `url(${require(`${props.el.url}`)})`}}> 
+            style={{backgroundImage: `url(${props.el.url})`}}> 
         	{props.el.title ?
         		 <div className={classes['shadow']+' '+classes['label']} >
                 	<h4 className={classes['title']}>{props.el.title} </h4> 

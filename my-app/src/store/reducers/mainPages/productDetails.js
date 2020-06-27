@@ -18,11 +18,11 @@ const initialState = {
                 { size: 41, clicked: false, id: 4 },
                 { size: 42, clicked: false, id: 5 }
             ],
-            mainImg: 'prod-detail-1.jpg',
+            mainImg: '/images/productDetailsPage/prod-detail-1.jpg',
             images: [
-                "prod-detail-2.jpg",
-                "prod-detail-3.jpg",
-                "prod-detail-4.jpg"
+                "/images/productDetailsPage/prod-detail-2.jpg",
+                "/images/productDetailsPage/prod-detail-3.jpg",
+                "/images/productDetailsPage/prod-detail-4.jpg"
             ]
         }
     }

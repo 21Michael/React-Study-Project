@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 const Item = (props) => (
     <li className={classes["item"]}>
     	<NavLink exact to={props.cloth.to} className={classes["img"]}>
-    		<img src={require(`${props.cloth.img}`)} alt="img"/>
+    		<img src={props.cloth.img} alt="img"/>
     		<div className={classes["info"]}>
             	<p>{props.cloth.title}</p>
             	<span>{props.cloth.prize}</span>

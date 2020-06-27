@@ -1,0 +1,66 @@
+.button__wrapper {
+    padding: 80px 0 43px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__continue {
+    margin-right: 82px;
+}
+
+.button__continue a {
+    display: block;
+    padding: 14px 0;
+    font-size: 1.1em;
+}
+
+.button__continue a:hover {
+    text-decoration: underline;
+}
+
+.button__order button {
+    padding: 18px 50px;
+    background-color: #f68236;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.button__order button:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 5px black;
+}
+
+@media all and (max-width:1024px) {
+    .button__wrapper {
+        padding: 38px 0 43px 0;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .button__continue {
+        padding: 19px 0;
+        margin-right: 0;
+    }
+
+    .button__order button {
+        padding: 20px 142px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .button__wrapper {
+        padding: 34px 0 43px 0;
+    }
+
+    .button__order {
+        width: 100%;
+    }
+
+    .button__order button {
+        font-size: 1.4em;
+        padding: 18px 0;
+        width: 100%;
+    }
+}

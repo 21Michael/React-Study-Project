@@ -1,0 +1,38 @@
+.title-wrapper {
+    text-align: center;
+    padding: 38px 0;
+}
+
+.title-head {
+    font-size: 2.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    word-spacing: 0.3em;
+}
+
+.title-description {
+    font-family: Georgia;
+    font-style: italic;
+    letter-spacing: 0.015em;
+    word-spacing: 0.01em;
+    font-size: 1.3em;
+    color: grey;
+    line-height: 1.6em;
+}
+
+@media all and (max-width:1024px) {
+    .title-description {
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width:767px) {
+    .title-wrapper {
+        padding: 30px 0;
+    }
+
+    .title-head {
+        font-size: 1.8em;
+    }
+}

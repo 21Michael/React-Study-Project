@@ -9,29 +9,86 @@ const initialState = {
             path: '/categoryAll/woman',
             images: [{
                     type: 'coats',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-1.jpg',
+                            to: '/productDetails/coats-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-2.jpg',
+                            to: '/productDetails/coats-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-3.jpg',
+                            to: '/productDetails/coats-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-4.jpg',
+                            to: '/productDetails/coats-4'
+                        }
                     ]
                 },
                 {
                     type: 'outwear',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-1.jpg',
+                            to: '/productDetails/outwear-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-2.jpg',
+                            to: '/productDetails/outwear-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-3.jpg',
+                            to: '/productDetails/outwear-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-4.jpg',
+                            to: '/productDetails/outwear-4'
+                        }
                     ]
                 },
                 {
                     type: 't-shirts',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-1.jpg',
+                            to: '/productDetails/tshirt-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-2.jpg',
+                            to: '/productDetails/tshirt-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-3.jpg',
+                            to: '/productDetails/tshirt-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-4.jpg',
+                            to: '/productDetails/tshirt-4'
+                        }
                     ]
                 }
             ]
@@ -40,29 +97,86 @@ const initialState = {
             path: '/categoryAll/men',
             images: [{
                     type: 'coats',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-1.jpg',
+                            to: '/productDetails/coats-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-2.jpg',
+                            to: '/productDetails/coats-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-3.jpg',
+                            to: '/productDetails/coats-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-4.jpg',
+                            to: '/productDetails/coats-4'
+                        }
                     ]
                 },
                 {
                     type: 'outwear',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-1.jpg',
+                            to: '/productDetails/outwear-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-2.jpg',
+                            to: '/productDetails/outwear-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-3.jpg',
+                            to: '/productDetails/outwear-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-4.jpg',
+                            to: '/productDetails/outwear-4'
+                        }
                     ]
                 },
                 {
                     type: 't-shirts',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-1.jpg',
+                            to: '/productDetails/tshirt-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-2.jpg',
+                            to: '/productDetails/tshirt-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-3.jpg',
+                            to: '/productDetails/tshirt-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-4.jpg',
+                            to: '/productDetails/tshirt-4'
+                        }
                     ]
                 }
             ]
@@ -71,29 +185,86 @@ const initialState = {
             path: '/categoryAll/kids',
             images: [{
                     type: 'coats',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-1.jpg',
+                            to: '/productDetails/coats-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-2.jpg',
+                            to: '/productDetails/coats-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-3.jpg',
+                            to: '/productDetails/coats-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-4.jpg',
+                            to: '/productDetails/coats-4'
+                        }
                     ]
                 },
                 {
                     type: 'outwear',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-1.jpg',
+                            to: '/productDetails/outwear-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-2.jpg',
+                            to: '/productDetails/outwear-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-3.jpg',
+                            to: '/productDetails/outwear-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-4.jpg',
+                            to: '/productDetails/outwear-4'
+                        }
                     ]
                 },
                 {
                     type: 't-shirts',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-1.jpg',
+                            to: '/productDetails/tshirt-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-2.jpg',
+                            to: '/productDetails/tshirt-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-3.jpg',
+                            to: '/productDetails/tshirt-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-4.jpg',
+                            to: '/productDetails/tshirt-4'
+                        }
                     ]
                 }
             ]
@@ -102,29 +273,86 @@ const initialState = {
             path: '/categoryAll/comingSoon',
             images: [{
                     type: 'coats',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/coats-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-1.jpg',
+                            to: '/productDetails/coats-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-2.jpg',
+                            to: '/productDetails/coats-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-3.jpg',
+                            to: '/productDetails/coats-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/coats-4.jpg',
+                            to: '/productDetails/coats-4'
+                        }
                     ]
                 },
                 {
                     type: 'outwear',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/outwear-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-1.jpg',
+                            to: '/productDetails/outwear-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-2.jpg',
+                            to: '/productDetails/outwear-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-3.jpg',
+                            to: '/productDetails/outwear-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/outwear-4.jpg',
+                            to: '/productDetails/outwear-4'
+                        }
                     ]
                 },
                 {
                     type: 't-shirts',
-                    clothes: [
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-1.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-2.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-3.jpg', to: '/productDetails' },
-                        { title: 'Product Name', prize: '100.99$', img: './img/tshirt-4.jpg', to: '/productDetails' }
+                    clothes: [{
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-1.jpg',
+                            to: '/productDetails/tshirt-1'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-2.jpg',
+                            to: '/productDetails/tshirt-2'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-3.jpg',
+                            to: '/productDetails/tshirt-3'
+                        },
+                        {
+                            title: 'Product Name',
+                            prize: '100.99$',
+                            img: '/images/categoryAllPage/tshirt-4.jpg',
+                            to: '/productDetails/tshirt-4'
+                        }
                     ]
                 }
             ]

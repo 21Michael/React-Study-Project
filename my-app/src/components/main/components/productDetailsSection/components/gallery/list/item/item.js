@@ -6,7 +6,7 @@ import {onClickThumbImg} from '../../../../../../../../store/actions/main.js'
 const Item = props => (
     <li className={classes["item"]}>
 	    <button className={classes["link"]} href="" onClick={()=>props.onClickThumbImg(props.img)}>
-	    	<img className={classes["img"]} src={require(`../../img/${props.img}`)} alt="img"/>
+	    	<img className={classes["img"]} src={props.img} alt="img"/>
 	    </button>
 	</li>
 )

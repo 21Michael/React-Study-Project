@@ -1,0 +1,17 @@
+.products {
+    margin-top: 44px;
+}
+
+@media all and (max-width:1024px) {
+    .products {
+        margin-top: 14px;
+        padding: 0 50px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .products {
+        margin-top: 18px;
+        padding: 0;
+    }
+}

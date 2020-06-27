@@ -1,0 +1,15 @@
+.title-list {
+    color: grey;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.9em;
+    padding: 9px 11px;
+    border-bottom: 1px solid lightgray;
+}
+
+@media all and (max-width:1024px) {
+    .title-list {
+        display: none;
+    }
+}

@@ -4,14 +4,14 @@ const initialState = {
     gallery: {
         transform: 0,
         images: [
-            "./img/footer-1.jpg",
-            "./img/footer-2.jpg",
-            "./img/footer-3.jpg",
-            "./img/footer-4.jpg",
-            "./img/footer-5.jpg",
-            "./img/footer-6.jpg",
-            "./img/footer-7.jpg",
-            "./img/footer-8.jpg"
+            {img:"/images/footer/footer-1.jpg", to: '/productDetails/coats-1'},
+            {img:"/images/footer/footer-2.jpg", to: '/productDetails/outwear-1'},
+            {img:"/images/footer/footer-3.jpg", to: '/productDetails/tshirt-1'},
+            {img:"/images/footer/footer-4.jpg", to: '/productDetails/coats-1'},
+            {img:"/images/footer/footer-5.jpg", to: '/productDetails/outwear-1'},
+            {img:"/images/footer/footer-6.jpg", to: '/productDetails/tshirt-1'},
+            {img:"/images/footer/footer-7.jpg", to: '/productDetails/coats-1'},
+            {img:"/images/footer/footer-8.jpg", to: '/productDetails/outwear-1'}
         ]
     },
     navigation: {

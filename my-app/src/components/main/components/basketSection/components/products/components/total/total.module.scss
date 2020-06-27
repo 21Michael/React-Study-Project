@@ -1,0 +1,35 @@
+.total{
+    padding: 18px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.total__text {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.total__num {
+    margin-right: 125px;
+    font-weight: bolder;
+    color: #f68236;
+}
+
+@media all and (max-width:1024px) {
+    .total {
+        padding: 10px 0;
+    }
+
+    .total__text {
+        margin-right: 0px;
+    }
+
+    .total__num {
+        margin-right: 35px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .total__num {
+        margin-right: 15px;
+    }
+}

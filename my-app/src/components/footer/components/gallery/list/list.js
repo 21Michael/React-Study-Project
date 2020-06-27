@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 const List = (props) => (
     <div className={classes['list']} >
         <ul className={classes['list-wrapper']} style={{transform: `translateX(${props.transform}px)`}}>
-          {props.images.map((url, key)=> <Item url={url} key={key}/>)} 
+          {props.images.map((el, key)=> <Item img={el.img} to={el.to} key={key}/>)} 
         </ul>
     </div>
 );
