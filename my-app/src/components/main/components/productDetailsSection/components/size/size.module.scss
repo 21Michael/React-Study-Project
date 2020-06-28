@@ -16,3 +16,10 @@
         font-size: 1.3em;
     }
 }
+
+input[type="radio"]{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+

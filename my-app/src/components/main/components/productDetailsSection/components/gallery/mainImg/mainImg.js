@@ -10,7 +10,7 @@ const MainImg = props => (
 
 function mapStateToProps(state) {
     return {
-    	mainImg: state.main.productDetails.sections.shoes.mainImg,
+    	mainImg: state.main.productDetails.section.mainImg,
     }
 }
 

@@ -5,12 +5,13 @@ import ButtonAdd from './button-add/button-add.js'
 
 const Size = props => (
 	<React.Fragment>
-	    <div className={classes["size"]}>
-	    	<span className={classes["title"]}>size</span>
-	        <List />
-	    </div>
-	   <ButtonAdd />
+		<div className={classes["size"]}>
+ 			<span className={classes["title"]}>size</span>
+     		<List />
+ 		</div>
+ 		<ButtonAdd />
    </React.Fragment>
 )
 
 export default Size
+

@@ -1,13 +1,14 @@
 import React from 'react';
 import classes from './button.module.scss'
+import {NavLink} from 'react-router-dom'
 
 const Button = props => (
     <div className={classes["button__wrapper"]}>
         <div className={classes["button__continue"]}>
-        	<a href="">Continue Shopping</a>
+        	<NavLink exact to='/'>Continue Shopping</NavLink>
         </div>
         <div className={classes["button__order"]}>
-        	<button>order now</button>
+        	<NavLink exact to='/orderSent'>order now</NavLink>
         </div>
     </div>
 )

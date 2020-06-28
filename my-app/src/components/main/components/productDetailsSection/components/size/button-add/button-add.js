@@ -12,20 +12,21 @@ const ButtonAdd = props => {
     return <div className={classes["button-add"]}>
 				<button 
 					className={buttonClasses}
-					onClick={props.onClickAddButton}
+					onClick={()=>props.onClickAddButton(props.section)}
 				>{buttonText}</button>
 			</div>
 }
 
 function mapStateToProps(state) {
     return {
-        added: state.main.productDetails.sections.shoes.added,
+        added: state.main.productDetails.section.added,
+        section: state.main.productDetails.section
     }
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        onClickAddButton: () => dispatch(onClickAddButton())
+        onClickAddButton: (value) => dispatch(onClickAddButton(value))
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(ButtonAdd)

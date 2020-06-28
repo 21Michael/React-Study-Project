@@ -1,0 +1,43 @@
+.section-order-sent {
+    padding: 183px 0 195px 0;
+    text-align: center;
+}
+
+.order-sent__title {
+    font-size: 4.7em;
+}
+
+.order-sent__description {
+    font-family: Georgia;
+    font-style: italic;
+    letter-spacing: 0.015em;
+    word-spacing: 0.01em;
+    font-size: 1.8em;
+    color: grey;
+}
+
+.main[data-page='ThankYouPage']+.footer .footer__section-gallery-scroll {
+    display: none;
+}
+
+
+@media all and (max-width:1023px) {
+    .section-order-sent {
+        padding: 39px 0 46px 0;
+    }
+}
+
+@media all and (max-width:767px) {
+    .section-order-sent {
+        padding: 47px 0 57px 0;
+    }
+
+    .order-sent__title {
+        line-height: 1.2em;
+    }
+
+    .order-sent__description {
+        padding-top: 25px;
+        line-height: 1.2em;
+    }
+}

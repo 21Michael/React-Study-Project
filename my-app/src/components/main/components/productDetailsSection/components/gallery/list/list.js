@@ -11,7 +11,7 @@ const List = props => (
 
 function mapStateToProps(state) {
     return {
-    	images: state.main.productDetails.sections.shoes.images,
+    	images: state.main.productDetails.section.images,
     }
 }
 

@@ -3,12 +3,13 @@ import { CHANGE_MAIN_IMG, CLICKED_SIZE, PRODUCT_ADDED } from '../../actions/acti
 const initialState = {
     hidden: true,
     path: '/productDetails',
-    sections: {
-        shoes: {
+    section:  {
             added: false,
+            id: 4,
             title: 'FLORAL PLIMSOLL',
             articleNum: 14210160762,
             price: 99.95,
+            color: 'yellow-black',
             description: ` Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
                     Maecena malesuada elit lectus felis, malesuada ultricies.`,
             sizes: [
@@ -24,34 +25,32 @@ const initialState = {
                 "/images/productDetailsPage/prod-detail-3.jpg",
                 "/images/productDetailsPage/prod-detail-4.jpg"
             ]
-        }
     }
 }
 
 export default function productDetailsReducer(state = initialState, action) {
     switch (action.type) {
         case CHANGE_MAIN_IMG:
-            let images = state.sections.shoes.images
-            let mainImg = state.sections.shoes.mainImg
+            let images = state.section.images
+            let mainImg = state.section.mainImg
 
             images = images.map((el) => el === action.value ? mainImg : el)
 
-            state.sections.shoes.images = images
-            state.sections.shoes.mainImg = action.value
-            return { ...state, sections: { ...state.sections } }
+            state.section.images = images
+            state.section.mainImg = action.value
+            return { ...state }
         case CLICKED_SIZE:
-            let sizes = state.sections.shoes.sizes
-            sizes = sizes.map((el) => {
+            let sizes = state.section.sizes
+            state.section.sizes = sizes.map((el) => {
                 el.id === action.value ?
                     el.clicked = true :
                     el.clicked = false
                 return el
             })
-            state.sections.shoes.sizes = sizes
-            return { ...state, sections: { ...state.sections } }
+            return { ...state }
         case PRODUCT_ADDED:
-            state.sections.shoes.added = true
-            return { ...state, sections: { ...state.sections } }
+            state.section.added = true
+            return { ...state }
         default:
             return state
     }

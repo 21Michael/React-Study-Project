@@ -11,7 +11,7 @@ const List = props => (
 
 function mapStateToProps(state) {
     return {
-      sizes: state.main.productDetails.sections.shoes.sizes 
+      sizes: state.main.productDetails.section.sizes 
     }
 }
 

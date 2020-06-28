@@ -5,14 +5,16 @@ import { connect } from 'react-redux'
 
 const ItemsList = props => (
     <ul className={classes["list-items"]}>
-       {props.items.map((el,i)=> <Item key={i} item={el}/>)}
+       {props.items.map((el)=> <Item key={el.id} item={el} qty={el.qty}/>)}
     </ul>
 )
+// при изменении объекта в массиве в state, state не видит diff   
 
 function mapStateToProps(state) {
     return {
         items: state.main.basket.items
     }
 }
+
 
 export default connect(mapStateToProps)(ItemsList)

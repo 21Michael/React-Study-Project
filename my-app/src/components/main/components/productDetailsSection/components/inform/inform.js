@@ -13,10 +13,10 @@ const Inform = props => (
 
 function mapStateToProps(state) {
     return {
-        title: state.main.productDetails.sections.shoes.title,
-        articleNum: state.main.productDetails.sections.shoes.articleNum,
-        price: state.main.productDetails.sections.shoes.price,
-        description: state.main.productDetails.sections.shoes.description 
+        title: state.main.productDetails.section.title,
+        articleNum: state.main.productDetails.section.articleNum,
+        price: state.main.productDetails.section.price,
+        description: state.main.productDetails.section.description 
     }
 }
 

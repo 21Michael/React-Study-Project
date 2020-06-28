@@ -8,6 +8,7 @@ import Asign from './components/asignSection/asign.js'
 import CategoryAll from './components/categoryAllSection/categoryAll.js'
 import ProductDetails from './components/productDetailsSection/productDetails.js'
 import Basket from './components/basketSection/basket.js'
+import OrderSent from './components/orderSentSection/orderSent.js'
 
 import Error404 from './components/errorSection/error404.js'
 import { connect } from 'react-redux'
@@ -33,6 +34,9 @@ class Main extends Component {
                     <Route path={this.props.basketPath}>
                         <Basket/>
                    </Route>
+                   <Route path={this.props.orderSentPath}>
+                        <OrderSent />
+                   </Route>
                    <Route> 
                         <Error404 />
                    </Route>
@@ -47,7 +51,8 @@ function mapStateToProps(state) {
     return {
         categoryAllPath: state.main.categoryAll.path,
         productDetailsPath: state.main.productDetails.path,
-        basketPath: state.main.basket.path
+        basketPath: state.main.basket.path,
+        orderSentPath: state.main.orderSent.path
     }
 }
 
