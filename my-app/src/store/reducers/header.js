@@ -1,4 +1,4 @@
-import { OPEN_CLOSE_FORM, CHANGE_INPUT, CHANGE_COUNTER, DELETE_ITEM, PRODUCT_ADDED, CHANGE_QTY } from '../actions/actionTypes.js'
+import { OPEN_CLOSE_FORM, CHANGE_INPUT, CHANGE_COUNTER, DELETE_ITEM,  SUBMIT_FORM, CHANGE_QTY } from '../actions/actionTypes.js'
 
 const initialState = {
     title: {
@@ -29,11 +29,11 @@ export default function headerReducer(state = initialState, action) {
         case CHANGE_QTY:
             state.basket.counter += action.value
             return { ...state, basket: { ...state.basket } }
-        case PRODUCT_ADDED:
+        case  SUBMIT_FORM:
             state.basket.counter += 1
             return { ...state, basket: { ...state.basket } }
         case DELETE_ITEM:
-            state.basket.counter -= action.value.qty
+            state.basket.counter -= action.item.qty
             return { ...state, basket: { ...state.basket } }
         case OPEN_CLOSE_FORM:
             state.form.hidden = !state.form.hidden

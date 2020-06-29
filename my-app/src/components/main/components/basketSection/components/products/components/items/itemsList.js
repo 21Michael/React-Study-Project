@@ -7,8 +7,7 @@ const ItemsList = props => (
     <ul className={classes["list-items"]}>
        {props.items.map((el)=> <Item key={el.id} item={el} qty={el.qty}/>)}
     </ul>
-)
-// при изменении объекта в массиве в state, state не видит diff   
+)  
 
 function mapStateToProps(state) {
     return {

@@ -1,0 +1,24 @@
+.item {
+    position: relative;
+    display: inline-block;
+    margin: 0 7px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.item__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+
+.item:hover,
+.clicked {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

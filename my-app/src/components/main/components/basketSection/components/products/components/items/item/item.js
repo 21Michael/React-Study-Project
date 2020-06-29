@@ -18,7 +18,7 @@ const Item = props => (
             <form className={classes["item__qty"]}>
                 <input type="number" name="amount" min="1" 
                 value={props.qty} 
-                onChange={(evt)=> props.onChangeQTY(evt.target.value - props.qty, props.item.id)}
+                onChange={(evt)=> props.onChangeQTY(evt.target.value, props.item)}
                 />
             </form>
         </div>
@@ -33,8 +33,8 @@ const Item = props => (
 
 function mapDispatchToProps(dispatch) {
     return {
-        onClickDelButton: (value)=> dispatch(onClickDelButton(value)),
-        onChangeQTY: (value, id) => dispatch(onChangeQTY(value, id))
+        onClickDelButton: (item)=> dispatch(onClickDelButton(item)),
+        onChangeQTY: (qty, item) => dispatch(onChangeQTY(qty, item))
     }
 }
 

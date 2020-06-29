@@ -1,4 +1,4 @@
-import { CHANGE_MAIN_IMG, CLICKED_SIZE, PRODUCT_ADDED, DELETE_ITEM, CHANGE_QTY } from './actionTypes.js'
+import { CHANGE_MAIN_IMG, CLICKED_SIZE, SUBMIT_FORM, DELETE_ITEM, CHANGE_QTY } from './actionTypes.js'
 
 export function onClickThumbImg(value) {
     return { type: CHANGE_MAIN_IMG, value: value }
@@ -8,26 +8,26 @@ export function onClickSize(value) {
     return { type: CLICKED_SIZE, value: value }
 }
 
-export function onClickAddButton(value) {
+export function onSubmit(product, size) {
     let item = {
-        id: value.id,
-        img: value.mainImg,
+        id: product.id,
+        img: product.mainImg,
         description: {
-            title: value.title,
-            ref: value.articleNum
+            title: product.title,
+            ref: product.articleNum
         },
-        color: value.color,
-        size: 38,
+        color: product.color,
+        size:  size,
         qty: 1,
-        amount: value.price
+        price: product.price
     }
-    return { type: PRODUCT_ADDED, value: item }
+    return { type: SUBMIT_FORM, value: item }
 }
 
-export function onClickDelButton(value) {
-    return { type: DELETE_ITEM, value: value }
+export function onClickDelButton(item) {
+    return { type: DELETE_ITEM, item:item }
 }
 
-export function onChangeQTY(value, id) {
-    return { type: CHANGE_QTY, value: value, id: id }
+export function onChangeQTY(qty, item) {
+    return { type: CHANGE_QTY, qty: qty, item: item }
 }
