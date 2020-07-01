@@ -17,20 +17,9 @@
     font-weight: bold;
 }
 
-
 @media all and (max-width:1023px) {
-
-    .title {
-        letter-spacing: 0.15em;
-        font-size: 2.1em;
+    .nav {
+        display: none;
     }
-
-   }
-
-@media all and (max-width:767px) {
-    .title {
-        line-height: 1.2em;
-    }
-
-    
 }
+

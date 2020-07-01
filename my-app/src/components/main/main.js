@@ -13,12 +13,36 @@ import OrderSent from './components/orderSentSection/orderSent.js'
 import Error404 from './components/errorSection/error404.js'
 import { connect } from 'react-redux'
 import { Switch, Route } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
 class Main extends Component {
+
+    dataPage(path)  {
+        switch (path.match(/(\/\w+)|(\/)/)[0]) {
+            case '/':
+                return 'HomePage'
+                break;
+            case this.props.categoryAllPath:
+                return 'CategoryAllPage'
+                break;
+            case this.props.productDetailsPath:
+                return 'ProductDetailsPage'
+                break;
+            case this.props.basketPath:
+                return 'BasketPage'
+                break;
+            case this.props.orderSentPath:
+                return 'OrderSentPage'
+                break;
+            default:
+                 return 'HomePage'
+                break;
+        }
+    }
     render() {
         return (
             <ErrorBoundary>
-            <main className={classes['main']}>
+            <main className={classes['main']} data-page={this.dataPage(this.props.location.pathname)}>
                 <Switch>
                     <Route exact path='/'>  
                         <Title />
@@ -56,4 +80,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Main)
+export default withRouter(connect(mapStateToProps)(Main))

@@ -38,7 +38,7 @@
 /*-----------------------------------------------------------------FOOTER-----------------------------------------------------------------*/
 
 @media all and (max-width:1023px) {
-    .main[data-page='CategoryAllPage']+.footer .footer__section-gallery-scroll {
+    main[data-page='CategoryAllPage']+ footer section:first-child  {
         display: none;
     }
 }

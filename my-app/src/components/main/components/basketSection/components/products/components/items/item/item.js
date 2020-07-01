@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './item.module.scss'
 import { connect } from 'react-redux'
-import {onClickDelButton, onChangeQTY} from '../../../../../../../../../store/actions/main.js'
+import { onClickDelButton, onChangeQTY } from '../../../../../../../../../store/actions/main.js'
 
 const Item = props => (
     <li className={classes["item"]} id={props.item.id}>
@@ -23,17 +23,17 @@ const Item = props => (
             </form>
         </div>
         <div className={classes["item__amount-delete-wrapper"]}>
-            <div className={classes["item__amount"]}>{props.item.amount}$</div>
+            <div className={classes["item__amount"]}>{props.item.amount || props.item.price}$</div>
             <div className={classes["item__delete"]}>
                 <button className={classes["item__delete-button"]} onClick={()=> props.onClickDelButton(props.item)}>✖</button>
             </div>
         </div>
-    </li>
+   </li>
 )
 
 function mapDispatchToProps(dispatch) {
     return {
-        onClickDelButton: (item)=> dispatch(onClickDelButton(item)),
+        onClickDelButton: (item) => dispatch(onClickDelButton(item)),
         onChangeQTY: (qty, item) => dispatch(onChangeQTY(qty, item))
     }
 }

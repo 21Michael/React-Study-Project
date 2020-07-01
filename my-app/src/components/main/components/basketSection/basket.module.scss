@@ -20,6 +20,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-.main[data-page='ShoppingBagPage']+.footer .footer__section-gallery-scroll {
+main[data-page='BasketPage'] + footer section:first-child {
     display: none;
 }

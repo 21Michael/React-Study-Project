@@ -16,11 +16,6 @@
     color: grey;
 }
 
-.main[data-page='ThankYouPage']+.footer .footer__section-gallery-scroll {
-    display: none;
-}
-
-
 @media all and (max-width:1023px) {
     .section-order-sent {
         padding: 39px 0 46px 0;

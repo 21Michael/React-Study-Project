@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './form.module.scss'
 import { connect } from 'react-redux'
-import { openCloseForm, onChangeInput } from '..//../../../store/actions/header.js'
+import { openCloseForm, onChangeInput } from '../../../../store/actions/header.js'
 
 const Form = (props) => {
     const buttonClasses = (!props.form.hidden) ?

@@ -1,9 +1,9 @@
 import React from 'react';
-import classes from './navTitle.module.scss'
+import classes from './navSocial.module.scss'
 import { connect } from 'react-redux'
 
 const Navigation = (props) => (
-        <nav className={classes['nav'] +' '+ classes['nav--social']}>
+        <nav className={classes['nav--social']}>
             <h4 className={classes['title']} >{props.title}</h4>
             <p className={classes['copyright']} >{props.copyright}</p>
             <div className={classes['icons-wrapper']} >

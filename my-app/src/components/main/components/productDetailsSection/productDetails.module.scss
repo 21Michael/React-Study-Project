@@ -12,3 +12,10 @@
         margin-bottom: 45px;
     }
 }
+
+
+@media all and (max-width:1023px) {
+    main[data-page='ProductDetailsPage']+ footer section:first-child  {
+        display: none;
+    }
+}
