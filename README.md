@@ -16,6 +16,7 @@ Studying the React.js framework
 
 **2) Advanced Topics:**
   - Context; ✅
+  - Lazy loading;
   - Higher Order Functions; ✅
   - Render props; ✅
   - Refs; ✅
@@ -42,3 +43,5 @@ Studying the React.js framework
   - Routing — React Router;
   - Styling — Styled Components/Emotion, Tailwind CSS, Chakra UI, Material UI, Ant Design;
   - Forms — Typescript, Storybook, Reacti18Next, Firebase, Practical React Libraries;
+
+**4) Questions:** https://github.com/sudheerj/reactjs-interview-questions

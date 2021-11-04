@@ -10,7 +10,7 @@
 Портал создаётся с помощью **ReactDOM.createPortal(child, container)**. Здесь **child** - это элемент, 
 фрагмент или строка React, а **container** - это местоположение или узел DOM, в который должен добавляться портал.
 ```js
-  const Modal =({ message, isOpen, onClose, children })=> {
+  const Modal = ({ message, isOpen, onClose, children }) => {
     if (!isOpen) return null
     return ReactDOM.createPortal(    
       <div className="modal">
