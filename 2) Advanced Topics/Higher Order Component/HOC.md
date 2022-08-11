@@ -2,7 +2,7 @@
 
 **1) JS realization:**  
 
-HOC -  is a function that does at least one of the following:  
+**HOF** -  is a function that does at least one of the following:  
   - takes one or more functions as arguments (i.e. procedural parameters);
   - returns a function as its result;  
 
@@ -17,9 +17,9 @@ Examples:
   }
   const mulTwo = mul(2)
   mulTwo(2) // 4
-  triple(3) // 9
-  triple(4) // 12
-  triple(5) // 15
+  mulTwo(3) // 6
+  mulTwo(4) // 8
+  mulTwo(5) // 10
 ```
 
   - callbacks:

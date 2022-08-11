@@ -1,6 +1,6 @@
 # Context:  
 
-The problem:  
+The problem (props drilling):  
 
 ![link](https://tproger.ru/s3/uploads/2019/11/ey25z0hvmy31xiiqqwgq.jpg)
 

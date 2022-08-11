@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  font-size: 14px;
+  background-color: #5bc169;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 5px;
+  }
+
+  &__form, &__listing {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 25px;
+  }
+}
+
+h3 {
+  margin: 0;
+}

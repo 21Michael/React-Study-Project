@@ -17,7 +17,7 @@ Studying the React.js framework
 **2) Advanced Topics:**
   - Context; ✅
   - Lazy loading;
-  - Higher Order Functions; ✅
+  - Higher Order Component; ✅
   - Render props; ✅
   - Refs; ✅
   - Error Boundaries; ✅
