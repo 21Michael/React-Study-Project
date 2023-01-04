@@ -22,7 +22,7 @@ class NameForm extends React.Component {
 }
 ```
 **2) Methods binding:**  
-  ###The problem: loosing context of the method.
+**<ins>The problem:</ins>** loosing context of the method.
 ```js
 class NameForm extends React.Component {
   constructor(props) {
@@ -44,7 +44,7 @@ class NameForm extends React.Component {
 }
 ```
 
-  ###Explanation:
+**<ins>Explanation:</ins>**  
   **Context (this)** in JS is being assigned to the object on the level of where the method is being invoked.
 
 ```js
@@ -72,7 +72,7 @@ form1.display(); // 1  this = form1 = { state: { value: 1 }, handleChange: (){},
 var onChange = form1.handleChange;
 onChange(); // TypeError: this is undefined (this = undefined ("strict mode") / globalObject) !!!!!!!
 ```
-  ###Solution:
+**<ins>Solution:</ins>**  
   - bind method:
  ```js
 class NameForm extends React.Component {
