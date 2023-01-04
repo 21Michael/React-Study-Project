@@ -4,12 +4,17 @@ import Form from './components/Form'
 import Listing from './components/Listing';
 
 function App() {
-  const [ data, setData ] = useState([1, 2]);
+  const [ data, setData ] = useState([]);
 
   const dataHandler = ({ value }) => { setData(initialState => {
     initialState.push(value)
-
     return [...initialState]
+  })}
+
+  const removeDataHandler = () => {
+    setData(initialState => {
+      initialState.pop()
+      return [...initialState]
   })}
 
   return (
@@ -18,7 +23,7 @@ function App() {
         <div className="header">
           <h3>Forma</h3>
         </div>
-        <Form dataHandler={dataHandler}/>
+        <Form dataHandler={dataHandler} removeDataHandler={removeDataHandler}/>
       </div>
       <div className="app__listing">
         <div className="header">

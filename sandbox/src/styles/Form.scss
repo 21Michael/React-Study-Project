@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
 
-
   div {
     display: flex;
     align-items: center;
@@ -20,12 +19,12 @@
     height: 30px;
   }
 
-  button {
-    font-size: 1.5em;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: antiquewhite
-  }
+  input:focus {
+     border: 5px solid red;
+   }
 
+}
+
+.active {
+  border: 5px solid red;
 }

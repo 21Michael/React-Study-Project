@@ -3,7 +3,7 @@
 **1) Element Variables:**  
 Логика на уровне присваивания компонента в переменную.
 ```js
-import Button1 from './...';
+import ButtonAdd from './...';
 import Button2 from './...';
 
 class LoginControl extends React.Component {
@@ -17,7 +17,7 @@ class LoginControl extends React.Component {
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
-    const button = isLoggedIn ? Button1 : Button2; // !!!!!!!!!!!!!!!
+    const button = isLoggedIn ? ButtonAdd : Button2; // !!!!!!!!!!!!!!!
 
     return (
       <div>
@@ -34,7 +34,7 @@ class LoginControl extends React.Component {
   - if(condition) {res} === (condition) && res.
   - if(condition) {res1} else {res2} === (condition) && res1 || res2.
 ```js
-import Button1 from './...';
+import ButtonAdd from './...';
 import Button2 from './...';
 
 class LoginControl extends React.Component {
@@ -52,7 +52,7 @@ class LoginControl extends React.Component {
     return (
       <div>
         <Greeting isLoggedIn={isLoggedIn} />
-        { isLoggedIn && Button1 || Button2 } // !!!!!!!!!!!!!!!!
+        { isLoggedIn && ButtonAdd || Button2 } // !!!!!!!!!!!!!!!!
       </div>
     );
   }
@@ -62,7 +62,7 @@ class LoginControl extends React.Component {
 **3) Inline If-Else :**  
 Внутри метода render() {} можно использовать inline If-Else ((condition) ? res1 : res2;).
 ```js
-import Button1 from './...';
+import ButtonAdd from './...';
 import Button2 from './...';
 
 class LoginControl extends React.Component {
@@ -80,7 +80,7 @@ class LoginControl extends React.Component {
     return (
       <div>
         <Greeting isLoggedIn={isLoggedIn} />
-        { isLoggedIn ? Button1 : Button2 } // !!!!!!!!!!!!!!!
+        { isLoggedIn ? ButtonAdd : Button2 } // !!!!!!!!!!!!!!!
       </div>
     );
   }
@@ -90,7 +90,7 @@ class LoginControl extends React.Component {
 **4) Prevent rendering inside of child component:**  
 Вернуть null по значению пропса из компонента.
 ```js
-function Button1 ({ isLoggedIn }) {
+function ButtonAdd ({ isLoggedIn }) {
   if (!isLoggedIn) {
     return null; // !!!!!!!!!!!!!!!!
   }
@@ -104,7 +104,7 @@ function Button1 ({ isLoggedIn }) {
 
 //  -----------------------------------------------------------  //
 
-import Button1 from './...';
+import ButtonAdd from './...';
 
 class LoginControl extends React.Component {
   constructor(props) {
@@ -121,7 +121,7 @@ class LoginControl extends React.Component {
     return (
       <div>
         <Greeting isLoggedIn={isLoggedIn} />
-        <Button1 isLoggedIn={isLoggedIn} />
+        <ButtonAdd isLoggedIn={isLoggedIn} />
       </div>
     );
   }

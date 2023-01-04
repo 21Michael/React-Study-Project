@@ -32,13 +32,13 @@ Studying the React.js framework
 
 **3) Ecosystem:**
   - State Management:
-    - Flux (https://github.com/21Michael/JS-arch-learning/tree/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux); ✅
-    - Redux (https://github.com/21Michael/JS-arch-learning/tree/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux): ✅
-      - Hooks (https://github.com/21Michael/JS-arch-learning/tree/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Hooks); ✅
-      - Thunks (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-thunk.md); ✅
-      - Toolkit (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-toolkit.md); ✅
-      - Saga (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/2.%20Flux/Redux/Redux-saga.md); ✅
-    - Mobx (https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)%20State%20Managment%20Patterns/4.%20MobX.md); ✅
+    - [Flux](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/2.Flux/Flux.md); ✅
+    - [Redux](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/2.Flux/Redux/Redux.md): ✅
+      - [Hooks](https://github.com/21Michael/JS-arch-learning/tree/main/JavaScript/9)State-Managment-Patterns/2.Flux/Redux/Hooks); ✅
+      - [Thunks](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/2.Flux/Redux/Redux-thunk.md); ✅
+      - [Toolkit](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/2.Flux/Redux/Redux-toolkit.md); ✅
+      - [Saga](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/2.Flux/Redux/Redux-saga.md); ✅
+    - [Mobx](https://github.com/21Michael/JS-arch-learning/blob/main/JavaScript/9)State-Managment-Patterns/4.MobX.md); ✅
     - Appolo Client;
   - Routing — React Router;
   - Styling — Styled Components/Emotion, Tailwind CSS, Chakra UI, Material UI, Ant Design;

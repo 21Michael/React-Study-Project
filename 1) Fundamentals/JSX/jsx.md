@@ -30,13 +30,13 @@ React.createElement(
 Usage object syntax (obj.prop, obj["prop"]) that allow to create Facades/Factory/Wrapper/APIs/Combine complex logic... that exports many react components:
 ```js
 import React from 'react';
-import Button1 from '...';
+import ButtonAdd from '...';
 import Button2 from '...';
 import Input1 from '...';
 import Input2 from '...';
 
 const UserComponents = {
-  Button: Button1,
+  Button: ButtonAdd,
   Input: Input2,
 }; // User API
 
@@ -48,14 +48,14 @@ const AdminComponents = {
 // or
 
 const Persone = {
-  Button: userType === 'admin' ? Button2 : Button1,
+  Button: userType === 'admin' ? Button2 : ButtonAdd,
   Input: userType === 'admin' ? Input1 : Input2,
 } // wrapper
 
 // or
 
 const ButtonFactory = {
-  admin: Button1,
+  admin: ButtonAdd,
   user: Button2,
 } // wrapper2
 

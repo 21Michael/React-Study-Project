@@ -12,5 +12,5 @@ export default function Listing({ data }) {
 }
 
 Listing.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.array
 };
